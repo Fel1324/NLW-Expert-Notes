@@ -17,6 +17,7 @@ export function NewNoteCard({ onNoteCreated }: NewNoteCardProps){
   function handleStartEditor(){
     setShouldShowOnboarding(false);
     setIsRecording(false);
+    handleStopRecording();
   }
 
   function handleContentChanged(event: ChangeEvent<HTMLTextAreaElement>){
